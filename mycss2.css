@@ -1,0 +1,142 @@
+html *, body * {
+    margin: 0px;
+  }
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: Grantipo;
+   
+}
+
+.wiley{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+nav {
+    width:88%;
+    margin:0 auto;
+    background: black;
+    margin-bottom: 10px;
+  }
+  
+nav li {
+    display: inline;
+    margin: 0;
+    padding: 44px;
+    
+  }
+  
+nav ul {
+    text-align: center;
+    justify-content: center;
+    display: inline, flex;
+    flex-direction: column;
+  }
+
+nav a {
+    text-align: center;
+    justify-content: center;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    text-decoration: none;
+}
+
+@font-face{
+    font-family: Grantipo;
+    src: url(GrantipoBeta001-Regular.ttf)
+}
+@font-face{
+    font-family: Grantipo;
+    font-weight: bold;
+    src: url(GrantipoBeta001-Bold.ttf);
+
+}
+#page1{
+    height: 88vh;
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    background: linear-gradient(to bottom right, rgba(255,230,191,1) 0%, rgba(255,234,252,1) 100%);
+  }
+
+.welcome{
+    margin-top: 40px;
+    margin-left: 70px;
+    font-size: 50px;
+}
+.thanks{
+    margin-top: 0px;
+    margin-left: 80px;
+    font-size: 16px;
+
+}
+.description{
+    width:80%;
+    margin: 0 auto;
+}
+#page1 #splash {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+#page1 #splash img {
+    margin-top: 5rem;
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+    
+  }
+#page1 #splash #splash-content {
+    margin-left: 0rem;
+    width: 50%;
+  }
+
+#page2 {
+    height:100vh;
+    margin-top: 0rem;
+    width: 88%;
+    margin: 0 auto;
+    background-color: #eecef0;
+}
+
+#page2 #splash {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+#page2 #splash img {
+    height: 200px;
+    width:200px;
+    border-radius: 50%;
+  }
+#page2 #splash #splash-content {
+    margin-left: 2rem;
+    width: 50%;
+  }
+  
+.description{
+    font-size: 20px;
+}
+.about{
+    text-align: left;
+    margin-left: 3rem;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.welcomepg2{
+    margin-left: 4rem;
+    font-size: 15px;
+    
+}

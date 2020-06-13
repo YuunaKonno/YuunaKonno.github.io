@@ -1,0 +1,81 @@
+#header {
+    position: absolute;
+    top: 2rem;
+    left:50%;
+    transform:translateX(-50%);
+
+}
+
+.content{
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+@font-face{
+    font-family: Grantipo;
+    src: url(GrantipoBeta001-Regular.ttf)
+}
+@font-face{
+    font-family: Grantipo;
+    font-weight: bold;
+    src: url(GrantipoBeta001-Bold.ttf);
+
+}
+body {
+  font-family: Grantipo;
+}
+body {
+    background-color:white;
+
+}
+
+h1 {
+    font-size: 28px;
+    color: #23e8e2;
+    font-weight: bold;
+    margin-bottom: 0.5rem
+}
+@media only screen and (max-width:850px){
+    h1 {
+            font-size: 20px;
+    }
+}
+
+h2 {
+    font-size: 24px;
+    color:black;
+    font-weight: normal;
+}
+
+h3 {
+    color: #23e8e2;
+    font-size: 18px;
+    text-align: center;
+}
+
+#intropage{
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#intropage #splash{
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#intropage #splash img{
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+
+}
