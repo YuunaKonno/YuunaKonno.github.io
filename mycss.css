@@ -1,81 +1,152 @@
-#header {
-    position: absolute;
-    top: 2rem;
-    left:50%;
-    transform:translateX(-50%);
-
+.project-list {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  margin-top: 75px;
 }
 
-.content{
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-
+@media (min-width: 576px) {
+  .project-list {
+    padding-bottom: 30vh;
+  }
 }
 
-@font-face{
-    font-family: Grantipo;
-    src: url(GrantipoBeta001-Regular.ttf)
-}
-@font-face{
-    font-family: Grantipo;
-    font-weight: bold;
-    src: url(GrantipoBeta001-Bold.ttf);
-
-}
-body {
-  font-family: Grantipo;
-}
-body {
-    background-color:white;
-
+@media (min-width: 576px) {
+  .project-list {
+    margin-top: 0;
+  }
 }
 
-h1 {
-    font-size: 28px;
-    color: #23e8e2;
-    font-weight: bold;
-    margin-bottom: 0.5rem
-}
-@media only screen and (max-width:850px){
-    h1 {
-            font-size: 20px;
-    }
+@media (min-width: 992px) {
+  .project-list {
+    padding-bottom: 15vw;
+  }
 }
 
-h2 {
-    font-size: 24px;
-    color:black;
-    font-weight: normal;
+.project-list_title {
+  text-align: center;
+  position: relative;
 }
 
-h3 {
-    color: #23e8e2;
-    font-size: 18px;
-    text-align: center;
+.project-list_title::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 1px;
+  height: 70px;
+  margin: 25px auto 0;
+  background-color: #D1D1D1;
 }
 
-#intropage{
-    height: 100vh;
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+@media (min-width: 768px) {
+  .project-list_title::after {
+    height: 110px;
+  }
 }
 
-#intropage #splash{
-    margin:0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+.project-list_wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100vw;
 }
 
-#intropage #splash img{
-    height: 128px;
-    width: 128px;
-    border-radius: 50%;
+.project-list_item {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
 
+@media (min-width: 576px) {
+  .project-list_item {
+    height: 25vw;
+  }
+}
+
+.project-list_item a {
+  pointer-events: auto;
+  display: inline-block;
+}
+
+.project-list_item:hover .project-info_wrapper::after {
+  transform: scale(1);
+}
+
+@media (min-width: 576px) {
+  .project-list_item:nth-child(odd) {
+    text-align: right;
+  }
+
+  .project-list_item:nth-child(odd) .project-info {
+    left: 50%;
+    margin-left: -0.8vw;
+  }
+
+  .project-list_item:nth-child(odd) .project-info_wrapper::before {
+    left: 0.8vw;
+  }
+
+  .project-list_item:nth-child(odd) .project-info_wrapper::after {
+    left: 0.8vw;
+    right: auto;
+    margin-left: -4px;
+  }
+
+  .project-list_item:nth-child(even) .project-info {
+    text-align: right;
+    right: 50%;
+    margin-right: -0.8vw;
+  }
+
+  .project-list_item:nth-child(even) .project-info_wrapper::before {
+    right: calc(0.8vw - 1px);
+  }
+}
+
+.project-list .disable {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.project-list .project-image {
+  opacity: 0;
+}
+
+/*!
+ * Copyright © 2018, Rezo Zero
+ *
+ * @file _project-item.scss
+ * @author Adrien Scholaert <adrien@rezo-zero.com>
+ */
+
+.project-image {
+  position: relative;
+  transform-origin: 0 0;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+@media (min-width: 576px) {
+  .project-list .project-image {
+    width: 63vw;
+    height: 46vw;
+  }
+}
+
+@media (min-width: 576px) {
+  .project-image {
+    width: 63vw;
+    height: 46vw;
+  }
+}
+
+.project-image .project-list-img {
+  opacity: 0;
+}
+
+.project-image .project-img {
+  width: 100%;
 }
