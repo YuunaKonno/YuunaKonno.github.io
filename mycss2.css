@@ -8,13 +8,11 @@ body {
     font-weight: 300;
     line-height: 1.5;
     font-family: Grantipo;
-   
 }
 
 .wiley{
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
 }
 
 nav {
@@ -72,12 +70,13 @@ nav a {
     margin-left: 70px;
     font-size: 50px;
 }
+
 .thanks{
     margin-top: 0px;
     margin-left: 80px;
     font-size: 16px;
-
 }
+
 .description{
     width:80%;
     margin: 0 auto;
@@ -88,6 +87,7 @@ nav a {
     justify-content: center;
     align-items: center;
   }
+
 #page1 #splash img {
     margin-top: 5rem;
     height: 200px;
@@ -115,11 +115,13 @@ nav a {
     justify-content: center;
     align-items: center;
   }
+
 #page2 #splash img {
     height: 200px;
     width:200px;
     border-radius: 50%;
   }
+  
 #page2 #splash #splash-content {
     margin-left: 2rem;
     width: 50%;
